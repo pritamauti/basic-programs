@@ -1,0 +1,51 @@
+factorial 
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	        int fact =1;
+	        System.out.println("Enter no n:");
+	            int n= sc.nextInt();
+	          
+	         
+	           //for(int i=1;i<=n;++i){
+	           //    fact = fact * i;
+	           //}
+	           
+	           for(int i=n; i>=1;--i){
+	               fact = fact * i;
+	           }
+	           
+	             System.out.println(fact);
+	             
+	}
+}
+
+Using recursion
+
+import java.util.*;
+public class Main
+{
+    int fact =1;
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	        
+	        int result;
+	        System.out.println("Enter no n:");
+	            int n= sc.nextInt();
+	           Main m = new Main();
+	           
+	           result = m.calcFact(n);
+	          System.out.println("result is: "+result);
+	}
+	     public int calcFact(int n){
+	         if(n>1){
+	            fact = fact * n;
+	                calcFact(n-1);
+	         }
+	                return fact;
+	     }
+	        
+}

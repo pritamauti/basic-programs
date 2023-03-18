@@ -1,0 +1,30 @@
+swapping two numbers
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	     
+	        System.out.println("Enter no a:");
+	            int a= sc.nextInt();
+	            System.out.println("Enter no b:");
+	            int b= sc.nextInt();
+	         //using temp variable  
+	           // int temp ;
+	           //  temp =a;
+	           //  a=b;
+	           //  b=temp;
+	       // withoug using third variable
+	           // a = a+b;
+	           // b = a-b;
+	           // a = a-b;   
+	       // using bitwise operator
+	            a= a^b;
+	            b= a^b;
+	            a= a^b;
+	           
+	             System.out.println("value of a:"+a);
+	             System.out.println("value of b:"+b);
+	}
+}

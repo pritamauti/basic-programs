@@ -1,0 +1,19 @@
+maximum between two nos.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter no a:");
+	            int a= sc.nextInt();
+	        System.out.println("Enter no b:");
+	            int b= sc.nextInt();
+	            String result;
+	            
+	         result= (a>b)? ("a is greater no."):("b is greater no.");
+	            
+		System.out.println(result);
+	}
+}
+
